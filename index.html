@@ -4,19 +4,19 @@
   <meta charset="utf-8">
   
   
-  <title>superlife</title>
+  <title>蜗牛</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="懂得分享，快乐才会加倍！">
 <meta property="og:type" content="website">
-<meta property="og:title" content="superlife">
+<meta property="og:title" content="蜗牛">
 <meta property="og:url" content="https://ccxsuperlife.github.io/index.html">
-<meta property="og:site_name" content="superlife">
+<meta property="og:site_name" content="蜗牛">
 <meta property="og:description" content="懂得分享，快乐才会加倍！">
 <meta property="og:locale" content="en_US">
-<meta property="article:author" content="star">
+<meta property="article:author" content="蜗牛">
 <meta name="twitter:card" content="summary">
   
-    <link rel="alternate" href="/atom.xml" title="superlife" type="application/atom+xml">
+    <link rel="alternate" href="/atom.xml" title="蜗牛" type="application/atom+xml">
   
   
     <link rel="shortcut icon" href="/favicon.png">
@@ -44,7 +44,7 @@
   <div id="header-outer" class="outer">
     <div id="header-title" class="inner">
       <h1 id="logo-wrap">
-        <a href="/" id="logo">superlife</a>
+        <a href="/" id="logo">蜗牛</a>
       </h1>
       
         <h2 id="subtitle-wrap">
@@ -153,7 +153,8 @@
 <p>spring.xml</p>
 <figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">beans</span> <span class="attr">xmlns</span>=<span class="string">&quot;http://www.springframework.org/schema/beans&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xmlns:xsi</span>=<span class="string">&quot;http://www.w3.org/2001/XMLSchema-instance&quot;</span></span></span><br><span class="line"><span class="tag">       <span class="attr">xsi:schemaLocation</span>=<span class="string">&quot;http://www.springframework.org/schema/beans</span></span></span><br><span class="line"><span class="string"><span class="tag">        https://www.springframework.org/schema/beans/spring-beans.xsd&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">        <span class="comment">&lt;!--classes--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;classes&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.ccxprogramming.entity.Classes&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;id&quot;</span> <span class="attr">value</span>=<span class="string">&quot;1&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span> <span class="attr">value</span>=<span class="string">&quot;一班&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line">        <span class="comment">&lt;!--student--&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">bean</span> <span class="attr">id</span>=<span class="string">&quot;student&quot;</span> <span class="attr">class</span>=<span class="string">&quot;com.ccxprogramming.entity.Student&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;id&quot;</span> <span class="attr">value</span>=<span class="string">&quot;100&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;name&quot;</span> <span class="attr">value</span>=<span class="string">&quot;小红&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;age&quot;</span> <span class="attr">value</span>=<span class="string">&quot;10&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">property</span> <span class="attr">name</span>=<span class="string">&quot;classes&quot;</span> <span class="attr">ref</span>=<span class="string">&quot;classes&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">property</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">bean</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">beans</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h5 id="bean之间的级联需要使⽤ref属性完成映射，⽽不能直接使⽤value，否则会抛出类型转换异常。"><a href="#bean之间的级联需要使⽤ref属性完成映射，⽽不能直接使⽤value，否则会抛出类型转换异常。" class="headerlink" title="bean之间的级联需要使⽤ref属性完成映射，⽽不能直接使⽤value，否则会抛出类型转换异常。"></a>bean之间的级联需要使⽤ref属性完成映射，⽽不能直接使⽤value，否则会抛出类型转换异常。</h5><p>Classes</p>
+<p>bean之间的级联需要使⽤ref属性完成映射，⽽不能直接使⽤value，否则会抛出类型转换异常。</p>
+<p>Classes</p>
 <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Classes</span> </span>&#123;</span><br><span class="line">    <span class="keyword">private</span> Integer id;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span>  List&lt;Student&gt; studentList;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>Students</p>
@@ -164,7 +165,7 @@
 
 <h2 id="Spring-中的-bean"><a href="#Spring-中的-bean" class="headerlink" title="Spring 中的 bean"></a>Spring 中的 bean</h2><p>bean是根据scope来⽣成，表示bean的作⽤域，scope有4种类型：</p>
 <ul>
-<li>singleton，单例，表示通过Spring容器获取的对象是唯⼀的，默认值。</li>
+<li>singleton，单例，表示通过Spring容器获取的对象是唯⼀的，默认值 。</li>
 <li>prototype，原型，表示通过Spring容器获取的对象是不同的。</li>
 <li>request，请求，表示在⼀次HTTP请求内有效。</li>
 <li>session，会话，表示在⼀个⽤户会话内有效。</li>
@@ -222,7 +223,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="https://ccxsuperlife.github.io/2021/05/26/spring-framework/" data-id="ckp6zsnia00003kv6g9ggaj84" data-title="spring framework" class="article-share-link">Share</a>
+      <a data-url="https://ccxsuperlife.github.io/2021/05/26/spring-framework/" data-id="ckp9gd4dh0000d0v6hfwmhwor" data-title="spring framework" class="article-share-link">Share</a>
       
       
       
@@ -297,7 +298,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       
-      &copy; 2021 star<br>
+      &copy; 2021 蜗牛<br>
       Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
     </div>
   </div>
